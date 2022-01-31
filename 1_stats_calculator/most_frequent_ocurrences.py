@@ -62,6 +62,9 @@ for position in position_freq.keys():
 most_common: str = ''.join(most_frequent_letters)
 most_common_per_position: str = ''.join(most_frequent_per_position.values())
 
+print(most_common)
+print(most_common_per_position)
+
 most_common_existant: str = min(word_list, key = lambda w: levenshtein_distance(most_common, w))
 most_common_per_position_existant: str = min(word_list, key = lambda w: levenshtein_distance(most_common_per_position, w))
 
